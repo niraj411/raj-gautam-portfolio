@@ -1,7 +1,12 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Himalaya LLC",
+  "name": "Niraj Gautam | Himalaya LLC - Full-Stack Developer & Property Management",
   "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
     {
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
@@ -20,6 +25,7 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#020617",
+  "background_color": "#020617",
+  "description": "Full-Stack Developer & Entrepreneur offering property management and custom software development solutions in Denver, Colorado."
 }
