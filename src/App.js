@@ -456,7 +456,7 @@ function DeveloperPortfolio() {
               <h3>Education</h3>
               <div className="exp-item">
                 <h4>University of Colorado Boulder</h4>
-                <p className="exp-role">B.S. Computer Science</p>
+                <p className="exp-role">Bachelor's Degree in Computer Science</p>
                 <p className="exp-date">College of Engineering & Applied Science | Dec 2025</p>
                 <p className="exp-details">
                   Coursework: Algorithms, Database Systems, Computer Systems,
