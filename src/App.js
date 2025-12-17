@@ -198,8 +198,8 @@ function Hero({ activeSection, setActiveSection }) {
             Full-Stack Developer & Entrepreneur
           </motion.div>
 
-          <motion.h1 variants={fadeInUp} className="glitch" data-text="Niraj Gautam">
-            Niraj Gautam
+          <motion.h1 variants={fadeInUp} className="glitch" data-text="Raj Gautam">
+            Raj Gautam
           </motion.h1>
 
           <motion.div className="hero-tagline" variants={fadeInUp}>
@@ -357,6 +357,29 @@ function DeveloperPortfolio() {
     }
   ];
 
+  const services = [
+    {
+      icon: <FaShoppingCart size={36} />,
+      title: "E-Commerce Solutions",
+      description: "End-to-end online store development with payment processing, inventory management, and analytics dashboards."
+    },
+    {
+      icon: <FaServer size={36} />,
+      title: "Full-Stack Development",
+      description: "Custom web applications built with modern technologies. From MVP to enterprise-scale solutions."
+    },
+    {
+      icon: <FaCloudUploadAlt size={36} />,
+      title: "Cloud & Deployment",
+      description: "AWS, Docker, and Kubernetes deployment with CI/CD pipelines. Scalable infrastructure that grows with you."
+    },
+    {
+      icon: <FaUsers size={36} />,
+      title: "Consulting & Strategy",
+      description: "Technical consulting for digital transformation. Sales optimization, workflow automation, and growth strategies."
+    }
+  ];
+
   const skills = [
     { category: "Languages", items: ["JavaScript", "Python", "Java", "C/C++", "PHP", "SQL", "Bash"] },
     { category: "Frontend", items: ["React", "React Native", "HTML/CSS", "Framer Motion"] },
@@ -408,6 +431,25 @@ function DeveloperPortfolio() {
               <h3><FaAws /> Cloud Native</h3>
               <p>AWS, Docker, Kubernetes deployment expertise</p>
             </motion.div>
+          </div>
+        </motion.div>
+
+        {/* Services */}
+        <motion.div className="services-section" initial="initial" whileInView="animate" viewport={{ once: true }}>
+          <h3 className="subsection-title">Services & Solutions</h3>
+          <div className="services-grid">
+            {services.map((service, idx) => (
+              <motion.div
+                key={idx}
+                className="service-card"
+                variants={fadeInUp}
+                whileHover={{ scale: 1.03, y: -5 }}
+              >
+                <div className="service-icon">{service.icon}</div>
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+              </motion.div>
+            ))}
           </div>
         </motion.div>
 
@@ -480,6 +522,7 @@ function DeveloperPortfolio() {
                 <h4>General Manager</h4>
                 <p className="exp-role">Tandoori Kitchen | 2018 - Present</p>
                 <p className="exp-highlight">#42 in Yelp's Top 100 U.S. Restaurants 2024</p>
+                <p className="exp-cert">Food Production Manager Certified (Valid through Jan 2030)</p>
               </div>
             </motion.div>
           </div>
