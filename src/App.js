@@ -349,6 +349,13 @@ function DeveloperPortfolio() {
       tech: ["React", "Node.js", "MongoDB", "Stripe API", "Docker", "GitHub Actions", "Nginx"]
     },
     {
+      title: "Tandoori IDS - Intrusion Detection System",
+      url: "https://github.com/niraj411/tandoori-ids",
+      github: "https://github.com/niraj411/tandoori-ids",
+      description: "Lightweight ML-powered network security system built to protect small business infrastructure. Features real-time threat detection, port scan and brute force monitoring, rogue device alerts, and a Streamlit dashboard with interactive visualizations.",
+      tech: ["Python", "scikit-learn", "Scapy", "Streamlit", "SQLite", "Plotly", "NetworkX"]
+    },
+    {
       title: "Restaurant E-Commerce Platform",
       url: "https://tandoorikitchenco.com",
       github: null,
